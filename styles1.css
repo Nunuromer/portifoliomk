@@ -1,8 +1,20 @@
 /* Responsividade */
 @media (max-width: 768px) {
+    .navegacao {
+        padding: 1rem; /* Ajuste do padding */
+    }
+
     .menu {
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row; /* Sempre em linha */
+        flex-wrap: nowrap; /* Não deixa quebrar */
+        justify-content: center;
+        gap: 1rem; /* Espaço reduzido entre os itens */
+    }
+
+    .menu-link {
+        padding: 0.3rem 0;
+        font-size: 0.9rem; /* Fonte um pouco menor para caber melhor */
+        white-space: nowrap; /* Garante que o texto não quebre em 2 linhas */
     }
 
     .foto, .foto-perfil {
@@ -28,6 +40,23 @@
 }
 
 @media (max-width: 480px) {
+    .navegacao {
+        padding: 0.8rem;
+    }
+
+    .menu {
+        flex-direction: row; /* Continua lado a lado */
+        flex-wrap: wrap; /* Permite quebrar se faltar espaço */
+        justify-content: center;
+        gap: 0.5rem; /* Menos espaço entre os itens */
+    }
+
+    .menu-link {
+        padding: 0.2rem 0;
+        font-size: 0.8rem; /* Fonte ainda menor para caber tudo */
+        white-space: nowrap; /* Mantém os links em uma linha só */
+    }
+
     .foto, .foto-perfil {
         width: 180px;
         height: 180px;
