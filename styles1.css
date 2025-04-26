@@ -13,12 +13,15 @@
     h1 {
         font-size: 2.5rem;
     }
+
     .cabecalho-sub-titulo {
         font-size: 1.2rem;
     }
+
     .sobre-titulo, .projetos-titulo, .contatos-titulo {
         font-size: 2rem;
     }
+
     .sobre-caixa, .formulario-contato {
         padding: 1.5rem;
     }
@@ -29,12 +32,15 @@
         width: 180px;
         height: 180px;
     }
+
     h1 {
         font-size: 2rem;
     }
+
     .cabecalho-sub-titulo {
         font-size: 1rem;
     }
+
     .sobre-titulo, .projetos-titulo, .contatos-titulo {
         font-size: 1.8rem;
     }
