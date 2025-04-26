@@ -1,20 +1,15 @@
 /* Responsividade */
 @media (max-width: 768px) {
-    .navegacao {
-        padding: 1rem; /* Ajuste do padding */
-    }
-
     .menu {
-        flex-direction: row; /* Sempre em linha */
-        flex-wrap: nowrap; /* Não deixa quebrar */
-        justify-content: center;
-        gap: 1rem; /* Espaço reduzido entre os itens */
+        flex-direction: row; /* lado a lado */
+        flex-wrap: wrap; /* permite quebrar se não couber */
+        justify-content: center; /* centraliza os itens */
+        gap: 1rem; /* reduz um pouco o espaço */
     }
 
     .menu-link {
-        padding: 0.3rem 0;
-        font-size: 0.9rem; /* Fonte um pouco menor para caber melhor */
-        white-space: nowrap; /* Garante que o texto não quebre em 2 linhas */
+        font-size: 0.9rem; /* reduz o tamanho do texto para caber melhor */
+        white-space: nowrap; /* impede quebra de linha nos links */
     }
 
     .foto, .foto-perfil {
@@ -40,21 +35,16 @@
 }
 
 @media (max-width: 480px) {
-    .navegacao {
-        padding: 0.8rem;
-    }
-
     .menu {
-        flex-direction: row; /* Continua lado a lado */
-        flex-wrap: wrap; /* Permite quebrar se faltar espaço */
+        flex-direction: row; /* continua lado a lado */
+        flex-wrap: wrap; /* deixa quebrar se apertar muito */
         justify-content: center;
-        gap: 0.5rem; /* Menos espaço entre os itens */
+        gap: 0.5rem; /* espaço ainda menor */
     }
 
     .menu-link {
-        padding: 0.2rem 0;
-        font-size: 0.8rem; /* Fonte ainda menor para caber tudo */
-        white-space: nowrap; /* Mantém os links em uma linha só */
+        font-size: 0.8rem; /* fonte ainda menor */
+        white-space: nowrap;
     }
 
     .foto, .foto-perfil {
