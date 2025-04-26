@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
     .menu {
         flex-direction: row; /* lado a lado */
-        flex-wrap: wrap; /* permite quebrar se não couber */
+        
         justify-content: center; /* centraliza os itens */
         gap: 0.7rem; /* reduz um pouco o espaço */
     }
@@ -37,7 +37,7 @@
 @media (max-width: 480px) {
     .navegacao {
         flex-direction: row; /* continua lado a lado */
-        flex-wrap: wrap; /* deixa quebrar se apertar muito */
+        
         justify-content: center;
         gap: 0.5rem; /* espaço ainda menor */
     }
