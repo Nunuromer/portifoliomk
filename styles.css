@@ -4,11 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 :root {
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
@@ -17,12 +15,10 @@ html {
     --claro: #e2e8f0;
     --vidro: rgba(255, 255, 255, 0.1);
 }
-
 body {
     background-color: var(--escuro);
     color: var(--claro);
 }
-
 .navegacao {
     position: fixed;
     top: 0;
@@ -31,7 +27,6 @@ body {
     z-index: 100;
     padding: 1.5rem;
 }
-
 .menu {
     display: flex;
     justify-content: center;
@@ -39,7 +34,6 @@ body {
     gap: 3rem;
     flex-wrap: wrap;
 }
-
 .menu-link {
     text-decoration: none;
     color: var(--claro);
@@ -47,7 +41,6 @@ body {
     position: relative;
     padding: 0.5rem 0;
 }
-
 .menu-link::after {
     content: '';
     height: 2px;
@@ -58,12 +51,10 @@ body {
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
     transition: width 0.5s ease;
 }
-
 .menu-link:hover::after {
     width: 100%;
     transition: width 0.5s;
 }
-
 .cabecalho {
     min-height: 100vh;
     display: flex;
@@ -73,7 +64,6 @@ body {
     text-align: center;
     padding: 2rem;
 }
-
 .foto, .foto-perfil {
     width: 350px;
     height: 350px;
@@ -84,23 +74,19 @@ body {
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     margin: 0 auto;
 }
-
 .foto-perfil {
     animation: flutuar 3s ease-in-out infinite;
 }
-
 h1 {
     font-size: 3.5rem;
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
 }
-
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
 }
-
 .sobre {
     padding: 6rem 2rem;
     display: flex;
@@ -109,14 +95,12 @@ h1 {
     justify-content: center;
     min-height: 100vh;
 }
-
 .sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 20px;
 }
-
 .sobre-caixa {
     padding: 2rem;
     max-width: 800px;
@@ -127,15 +111,12 @@ h1 {
     background: rgba(255, 255, 255, 0.05);
     text-align: justify;
 }
-
 .sobre-paragrafo {
     font-size: 1rem;
 }
-
 .projetos {
     padding: 6rem 2rem;
 }
-
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -143,7 +124,6 @@ h1 {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -159,22 +139,18 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
-
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);
 }
-
 .projetos-imagem {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
-
 .caixa-textos-projeto {
     padding: 1.5rem;
 }
-
 .paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
@@ -183,17 +159,14 @@ h1 {
 .info-projetos {
     margin-bottom: 5px;
 }
-
 .contatos {
     padding: 6rem 2rem;
 }
-
 .contatos-titulo {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
-
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -203,7 +176,6 @@ h1 {
     border: 1px solid var(--vidro);
     border-radius: 16px;
 }
-
 .campo-form {
     width: 100%;
     padding: 1rem;
@@ -214,12 +186,10 @@ h1 {
     outline: none;
     margin-bottom: 1.5rem;
 }
-
 .campo-form:focus {
     border-color: var(--secundaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
-
 .botao-form {
     color: var(--claro);
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
@@ -231,12 +201,10 @@ h1 {
     width: 100%;
     transition: all 0.5s ease;
 }
-
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
-
 .particulas {
     position: fixed;
     top: 0;
@@ -249,7 +217,6 @@ h1 {
         radial-gradient(circle at 10% 20%, var(--primaria), transparent 20%),
         radial-gradient(circle at 90% 80%, var(--secundaria), transparent 20%);
 }
-
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
@@ -258,7 +225,6 @@ h1 {
         transform: translateY(-20px);
     }
 }
-
 body::before {
     content: "";
     position: fixed;
@@ -274,7 +240,6 @@ body::before {
     z-index: -2;
     pointer-events: none;
 }
-
 /* Responsividade */
 @media (max-width: 768px) {
     .menu {
@@ -294,7 +259,6 @@ body::before {
     .cabecalho-sub-titulo {
         font-size: 1.2rem;
     }
-
     .sobre-titulo, .projetos-titulo, .contatos-titulo {
         font-size: 2rem;
     }
@@ -303,22 +267,25 @@ body::before {
         padding: 1.5rem;
     }
 }
-
 @media (max-width: 480px) {
     .foto, .foto-perfil {
         width: 180px;
         height: 180px;
     }
-
     h1 {
         font-size: 2rem;
     }
-
     .cabecalho-sub-titulo {
         font-size: 1rem;
     }
-
     .sobre-titulo, .projetos-titulo, .contatos-titulo {
         font-size: 1.8rem;
     }
 }
+
+
+
+
+
+
+
