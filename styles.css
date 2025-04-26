@@ -37,6 +37,7 @@ body {
     justify-content: center;
     list-style: none;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .menu-link {
@@ -60,6 +61,7 @@ body {
 
 .menu-link:hover::after {
     width: 100%;
+    transition: width 0.5s;
 }
 
 .cabecalho {
@@ -68,6 +70,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    padding: 2rem;
 }
 
 .foto, .foto-perfil {
@@ -78,7 +82,6 @@ body {
     border-radius: 50%;
     border: 4px solid var(--vidro);
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    display: block;
     margin: 0 auto;
 }
 
@@ -103,8 +106,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    box-sizing: border-box;
 }
 
 .sobre-titulo {
@@ -194,7 +197,7 @@ h1 {
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
     padding: 2rem;
     border: 1px solid var(--vidro);
@@ -209,15 +212,12 @@ h1 {
     color: var(--claro);
     border: 1px solid var(--vidro);
     outline: none;
+    margin-bottom: 1.5rem;
 }
 
 .campo-form:focus {
     border-color: var(--secundaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
-}
-
-.grupo-form {
-    margin-bottom: 1.5rem;
 }
 
 .botao-form {
@@ -227,9 +227,98 @@ h1 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
 }
 
 .botao-form:hover {
-    background: linear-gradient(90deg, var(--secundaria), var(--primaria));
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background:
+        radial-gradient(circle at 10% 20%, var(--primaria), transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secundaria), transparent 20%);
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.05;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .foto, .foto-perfil {
+        width: 250px;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.2rem;
+    }
+
+    .sobre-titulo, .projetos-titulo, .contatos-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-caixa, .formulario-contato {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .foto, .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1rem;
+    }
+
+    .sobre-titulo, .projetos-titulo, .contatos-titulo {
+        font-size: 1.8rem;
+    }
 }
