@@ -1,6 +1,6 @@
 /* Responsividade */
 @media (max-width: 768px) {
-    .navegacao {
+    .menu {
         flex-direction: row; /* lado a lado */
         flex-wrap: wrap; /* permite quebrar se não couber */
         justify-content: center; /* centraliza os itens */
