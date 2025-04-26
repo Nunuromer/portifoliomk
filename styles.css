@@ -240,49 +240,6 @@ body::before {
     z-index: -2;
     pointer-events: none;
 }
-/* Responsividade */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .foto, .foto-perfil {
-        width: 250px;
-        height: 250px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .cabecalho-sub-titulo {
-        font-size: 1.2rem;
-    }
-    .sobre-titulo, .projetos-titulo, .contatos-titulo {
-        font-size: 2rem;
-    }
-
-    .sobre-caixa, .formulario-contato {
-        padding: 1.5rem;
-    }
-}
-@media (max-width: 480px) {
-    .foto, .foto-perfil {
-        width: 180px;
-        height: 180px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    .cabecalho-sub-titulo {
-        font-size: 1rem;
-    }
-    .sobre-titulo, .projetos-titulo, .contatos-titulo {
-        font-size: 1.8rem;
-    }
-}
-
 
 
 
