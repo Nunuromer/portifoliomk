@@ -4,7 +4,7 @@
         flex-direction: row; /* lado a lado */
         flex-wrap: wrap; /* permite quebrar se não couber */
         justify-content: center; /* centraliza os itens */
-        gap: 1rem; /* reduz um pouco o espaço */
+        gap: 0.7rem; /* reduz um pouco o espaço */
     }
 
     .menu-link {
