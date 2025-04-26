@@ -26,6 +26,11 @@ body {
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .menu {
     display: flex;
@@ -35,11 +40,14 @@ body {
     flex-wrap: wrap;
 }
 .menu-link {
+
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
     position: relative;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0.5rem; /* padding reduzido */
+    white-space: nowrap; /* não deixa quebrar o texto */
+    font-size: 1rem; 
 }
 .menu-link::after {
     content: '';
@@ -240,6 +248,7 @@ body::before {
     z-index: -2;
     pointer-events: none;
 }
+
 
 
 
